@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reddit Web Dev</title>
+	
+	<!-- Bootstrap CSS -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="styles/style.css"> -->
+	<!-- <script src="jquery-3.2.1.min.js"></script> -->
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+	<!-- Nav bar -->
+	<nav class="nav nav-pills nav-fill navbar-dark bg-dark">
+ 		<a class="navbar-brand" href="#">&nbsp Mongo Scraper</a>
+  		<!-- <a class="nav-link disabled home" href="#">Home</a> -->
+  		<!-- <a class="nav-link disabled saved" href="#">Saved Articles</a> -->
+  		<button type="button" class="btn btn-info scrape-news">Scrape New Articles</a>
+	</nav>
+  	
+
+	<!-- Jumbotron -->
+	<div class="jumbotron jumbotron-fluid">
+  		<div class="container">
+    		<h1 class="display-2">Reddit Web Dev Board</h1>
+  		</div>
+	</div>
+
+	<!-- Article table -->
+	<div class ="container-fluid table"></div>
+		<div class="buttons">
+      <button type="button" class="btn btn-warning comment-sort">Sort By Comment Count</button>
+      <!-- <button class="author-sort">Sort By Author</button> -->
+    </div>
+    <table class="table table-responsive table-dark results">
+      <thead>
+        <tr>
+          <th class="thread-title">Title</th>
+          <th class="thread-author">Author</th>
+          <th class="thread-commentCount">Comments</th>
+          <th class="thread-timestampDisplay">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Results from DB here -->
+      </tbody>
+    </table>
+	 <script src="app.js"></script>	
+
+
+</body>
+
+</html>
