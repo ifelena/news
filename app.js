@@ -55,7 +55,7 @@ $('.comment-sort').on('click', function() {
 //Click function for scrape news
 $('.scrape-news').click(function() {
 
-	$.getJSON('http://localhost:8080/api/getscrape', function(data) {
+	$.getJSON('http://localhost:3000/api/getscrape', function(data) {
 		//console.log(data);
 		articles = data;
 		refreshTable(articles);
