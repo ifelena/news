@@ -7,7 +7,7 @@ const app = express();
 // Reference database "Scraper" found in the webdevdata collection
 const db = mongojs('scraper', ['webdevdata']);
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
 
 // CORS
 app.use(function(req, res, next) {
@@ -139,6 +139,6 @@ app.post('/api/posts/:id/downvote', (req, res) => {
 
 // Start express server
 //app.listen(port, () => console.log('App listening on port 8080!'));
-app.listen(port, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("App is running on port " + port);
 });

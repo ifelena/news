@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-  	"start": "node server.js",
+    "start": "node server.js",
     "test": "node server.js"
   },
   "author": "Ife Ramsey",
@@ -17,5 +17,8 @@
     "mongojs": "^2.4.1",
     "mongoose": "^4.13.9",
     "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
   }
 }
