@@ -5,7 +5,8 @@ const request = require("request");
 
 const app = express();
 // Reference database "Scraper" found in the webdevdata collection
-const db = mongojs('scraper', ['webdevdata']);
+const connectionString = process.env.MONGODB_URI || 'scraper';
+const db = mongojs(connectionString, ['webdevdata']);
 
 var port = process.env.PORT || 3000;
 
