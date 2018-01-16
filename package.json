@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "node server.js"
+    "start": "yarn start",
+    "test": "yarn start"
   },
   "author": "Ife Ramsey",
   "license": "ISC",
