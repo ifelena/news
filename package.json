@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "yarn start",
-    "test": "yarn start"
+    "test": "node server.js"
   },
   "author": "Ife Ramsey",
   "license": "ISC",
