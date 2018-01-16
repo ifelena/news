@@ -7,7 +7,7 @@ const app = express();
 // Reference database "Scraper" found in the webdevdata collection
 const db = mongojs('scraper', ['webdevdata']);
 
-port = process.env.PORT || 8080;
+var port = process.env.PORT || 8080;
 
 // CORS
 app.use(function(req, res, next) {
